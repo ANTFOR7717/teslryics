@@ -2,3 +2,7 @@
 .lyrics {
     text-align: center;
 }
+
+.bg-black {
+    background-color: rgba(0, 0, 0, 0.65);
+}

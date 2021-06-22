@@ -6,32 +6,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-<div class="container is-fluid">
-
-<div class="section">
-<figure class="image is-128x128 container">
-<img src="{{url_for('static', filename='images/tesla_logo.svg')}}">
-</figure>
-</div>
+<div class="">
 
 <div class="columns">
   <div class="column is-one-quarter"></div>
   <div class="column is-half">
+        <div class="section">
+<figure class="image is-128x128 container">
+<img src="{{url_for('static', filename='images/tesla_logo.svg')}}">
+</figure>
+</div>
         <form action="/lyrics/" method="POST">
-            <div class="field">
+            <div class="field mt-6">
                 <input class="input is-large" type="text" placeholder="song name" name="name" />
             </div>
-                <div class="field is-grouped is-grouped-centered">
-                    <button class="button is-info is-large mt-4" name="forwardBtn" type="submit">Search</button>
-                </div>
         </form>
+      <div class="section is-medium">
+           <div class="field is-grouped is-grouped-centered">
+                <button class="button is-info is-large mt-4" name="forwardBtn" type="submit">Search</button>
+           </div>
+      </div>
   </div>
   <div class="column is-one-quarter"></div>
 </div>
-
-
-
-
 
 </div>
 </body>
