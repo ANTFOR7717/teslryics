@@ -10,23 +10,25 @@
 
 <div class="columns">
   <div class="column is-one-quarter"></div>
+
   <div class="column is-half">
-        <div class="section">
+    <div class="section">
 <figure class="image is-128x128 container">
 <img src="{{url_for('static', filename='images/tesla_logo.svg')}}">
 </figure>
-</div>
+        </div>
         <form action="/lyrics/" method="POST">
             <div class="field mt-6">
-                <input class="input is-large" type="text" placeholder="song name" name="name" />
+                <input class="input is-large is-rounded is-danger is-hovered" type="text" placeholder="song name" name="name" />
             </div>
-        </form>
-      <div class="section is-medium">
+            <div class="section is-medium">
            <div class="field is-grouped is-grouped-centered">
-                <a class="button is-info is-large mt-4" name="forwardBtn" type="submit">Search</a>
+                <button style="background-color: #111111" class="button is-info is-large mt-4" name="forwardBtn" type="submit">Search</button>
            </div>
       </div>
+        </form>
   </div>
+
   <div class="column is-one-quarter"></div>
 </div>
 

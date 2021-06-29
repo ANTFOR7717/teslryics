@@ -6,3 +6,10 @@
 .bg-black {
     background-color: rgba(0, 0, 0, 0.65);
 }
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .5px;
+    line-height: 2.6;
+    color: black;
+}

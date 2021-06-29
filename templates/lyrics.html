@@ -5,6 +5,9 @@
     <title>Lyrics</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lyrics.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +19,7 @@
 
   </div>
   <div class="column is-four-fifths">
-        <div class="section">
+        <div style="margin-bottom: -3rem" class="section">
 <figure class="image is-128x128 container">
 <img src="{{url_for('static', filename='images/tesla_logo.svg')}}">
 </figure>
@@ -25,11 +28,11 @@
             <div class="columns">
                 <div class="column">
             <div class="field is-grouped is-grouped-centered">
-                <a href="/" class="button is-info mt-4" name="backwardBtn" type="submit">New Search</a>
+                <a style="background-color: #111111" href="/" class="button is-info mt-4" name="backwardBtn" type="submit">New Search</a>
             </div>
                 </div>
                 <div class="column">
-                    <figure class="image is-128x128 -mt-6 container">
+                    <figure class="image is-128x128 container">
         <img src="{{ albumart }}" alt="">
           </figure>
                 </div>
@@ -37,10 +40,10 @@
 
             </div>
 
-        <div class="lyrics">
+        <div class="lyrics mt-6">
       <p class="title">{{ song }}</p> <p class="subtitle">{{ artist }}</p>
 <pre>
-    <span class="is-size-4">
+    <span class="is-size-4 roboto">
 {{ lyrics }}
     </span>
 </pre>
